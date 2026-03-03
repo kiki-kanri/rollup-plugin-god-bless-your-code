@@ -19,6 +19,7 @@
   "eslint.validate": [
     "astro",
     "css",
+    "dockercompose",
     "gql",
     "graphql",
     "html",
