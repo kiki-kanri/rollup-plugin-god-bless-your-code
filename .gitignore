@@ -156,6 +156,9 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/node
 
+# OMX
+.omx/
+
 # pnpm v8-compile-cache dependency
 # - https://github.com/pnpm/pnpm/issues/7330
 node-compile-cache/

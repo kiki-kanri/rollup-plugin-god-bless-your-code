@@ -1,0 +1,3 @@
+# Keep every tracked text file LF-only across Windows/Linux.
+# This prevents cross-platform tooling from seeing CRLF churn.
+* text=auto eol=lf

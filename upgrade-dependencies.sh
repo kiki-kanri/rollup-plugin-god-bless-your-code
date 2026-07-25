@@ -2,8 +2,8 @@
 
 set -euo pipefail
 
-SCRIPTS_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
-cd "${SCRIPTS_DIR}"
+SCRIPT_DIR="$(cd -P -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+cd "${SCRIPT_DIR}"
 
 [[ " $@ " =~ ' -c ' ]] && rm -rf ./node_modules ./pnpm-lock.yaml
 

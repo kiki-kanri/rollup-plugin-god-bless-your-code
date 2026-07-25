@@ -2,8 +2,8 @@
 
 set -euo pipefail
 
-SCRIPTS_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
-cd "${SCRIPTS_DIR}"
+SCRIPT_DIR="$(cd -P -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+cd "${SCRIPT_DIR}"
 
 git config --replace-all core.filemode true
 find . -name node_modules -prune -o \( -type f -exec chmod 600 {} + \)
